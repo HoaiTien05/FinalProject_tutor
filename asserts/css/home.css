@@ -6,6 +6,8 @@ body {
 .large_head {
     display: flex;
     justify-content: center;
+    /* position: fixed;
+    background-color: white; */
 }
 .select-page{
     font-size: 18px;
@@ -210,6 +212,7 @@ body {
     color: #45595b;
 }
 .add-to-cart{
+    margin-top: 5px;
     display: flex;
     gap: 10px;
     width: 110px;
@@ -240,6 +243,7 @@ body {
 
 .book_vegetable {
     width: 270px;
+
 }
 
 .btt {
@@ -249,11 +253,20 @@ body {
 }
 
 .btt-right {
-    padding: 10px 20px;
+    padding: 8px 25px;
 }
 
 .btt-left {
-    padding: 10px 20px;
+    padding: 8px 25px;
+}
+
+.btt-left:hover {
+    background-color: orange;
+    color: white;
+}
+.btt-right:hover {
+    background-color: orange;
+    color: white;
 }
 
 .info_vegetable {
@@ -291,7 +304,7 @@ body {
     margin-top: 25px;
     color: #45595b;
 }
-.info_banner1 button {
+/* .info_banner1 button {
     border: none;
     padding: 15px 45px;
     border-radius: 25px;
@@ -300,8 +313,19 @@ body {
     background-color: orange;
     border: 1px solid white;
     color: #45595b;
+} */
+.button-buy{
+    margin-top: 30px;
+    padding: 15px 45px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: #45595b;
+    font-size: 20px;
+    background-color: orange;
 }
-
+.button-buy:hover {
+    background-color: rgb(129, 196, 8);
+}
 .head-address{
     display: flex;
     gap: 50px;
@@ -320,38 +344,60 @@ body {
     color: #5e990c;
 }
 .head-icon i:nth-child(1):hover {
-    background-color: orange; /* Màu cam cho icon đầu tiên */
+    background-color: orange;
 }
   
 .head-icon i:nth-child(2):hover,
 .head-icon i:nth-child(3):hover {
-    color: #5e990c; /* Màu xanh cho icon thứ hai và thứ ba */
+    color: #5e990c; 
 }
 
-/* .head-nav select:hover .option{
-    background-color: orange;
-    color: #5e990c;
-} */
 .img p{
     position: absolute;
     top: 0px;
     left: 15px;
 }
+/*  */
 .book_products{
     overflow: hidden;
     position: relative;
 }
+
+.book_products .img {
+    position: relative;
+    overflow: hidden; 
+}
 .book_products .img img {
     width: 100%;
-    transition: transform 0.3s ease-in-out;
-    
+    transition: transform 0.3s ease-in-out;   
 }
 
 .book_products:hover .img img {
-    transform: scale(1.3); /* Phóng to lên khi hover */
-    overflow: hidden;
+    transform: scale(1.3); 
     
 }
+
+/*  */
+.book_vegetable{
+    overflow: hidden;
+}
+.book_vegetable .img{
+    overflow: hidden;
+}
+.book_vegetable .img img{
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.book_vegetable:hover .img img {
+    transform: scale(1.3); 
+}
+.add-to-cart:hover{
+    background-color: orange;
+}
+.add-to-cart:hover p {
+    color: white;
+}
+
 .head-nav{
     display: flex;
     align-items: center;
@@ -489,28 +535,30 @@ body {
 
 .statictical{
     background-color: #f4f6f8;
-    padding: 50px;
+    padding: 50px 40px;
     margin-top: 100px;
     display: flex;
     gap: 20px;
     text-align: center;
 }
 .bock-statictical{
-    width: 300px;
     background-color: white;
-    padding: 50px 30px;
+    padding: 50px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .bock-statictical i{
     font-size: 60px;
     color: orange;
 }
 .bock-statictical h3{
-    font-size: 30px;
+    width: 150px;
+    font-size: 25px;
     color: rgb(129, 196, 8);
+    
 }
 .bock-statictical h2{
     margin: 0px;
@@ -528,7 +576,7 @@ body {
     margin-top: 100px;
 }
 .h3-our{
-    color: green;
+    color: rgb(129, 196, 8);
     margin: 0px;
     font-size: 30px;
 }
@@ -567,8 +615,14 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+.book-client{
+    display: flex;
+    align-items: center;
+}
 .nhay i{
     color: orange;
+    padding-left: 200px;
+    font-size: 35px;
 }
 .book-client{
     display: flex;
@@ -580,9 +634,7 @@ body {
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    background-color: #45595b;
-    /* height: 500px; */
-    
+    background-color: #45595b;   
 }
 .footer{
     width: 1140px;
@@ -611,7 +663,7 @@ body {
 }
 .subscribe-form {
     display: flex;
-    width: 500px; 
+    /* width: 500px;  */
     border-radius: 50px;
     overflow: hidden;
     background-color: white;
@@ -632,7 +684,7 @@ body {
 .subscribe-btn {
     background-color: #84c529; 
     color: white;
-    padding: 15px 30px;
+    padding: 15px 20px;
     border: none;
     font-size: 18px;
     cursor: pointer;
@@ -711,8 +763,6 @@ body {
     color: #5e990c; 
 }
 
-
-
 .content-footer h2 {
     color: white;
 }
@@ -740,10 +790,16 @@ body {
 }
 
 .read-more-btn:hover {
-    background-color: #9cc131;
+    background-color: orange;
+    color: white;
 }
 .bottom-footer img{
     margin-top: 10px;
+}
+
+#info-footer p:hover {
+    color: orange; /* Màu khi hover vào p */
+    /* transition: color 0.5s ease; */
 }
 
 .img_popular img{
@@ -869,10 +925,13 @@ body {
     margin-top: 100px;
     margin-bottom: 0px;
 }
+
 .h1-best div{
+    width: 700px;
     color: #45595b;
     font-size: 20px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .best-pro{
